@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+
+body{
+    background: linear-gradient(132deg, salmon, rgb(8, 55, 117), #c29b68);
+    background-size: 400% 400%;
+    animation: gradientanim 30s ease infinite;
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: type 1.5s steps(10), blink .5s infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 300;
+    font-size: 50px;
+    margin: 0;
+    border-right: 2px solid white;
+    color: #ffffff;
+    width: 11ch;
+    padding: 5px;
+    background-color: rgba(1,1,1,0.2);
+    border-radius:2px;
+
+
+}
+
+@keyframes gradientanim{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+@keyframes type{
+    0% {
+        width:0ch;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    } 
+}
